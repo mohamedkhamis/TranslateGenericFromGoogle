@@ -1,0 +1,313 @@
+{
+  "info": [
+    {
+      "info": "عداد أحادي قديم 2017",
+      "photo": "http://sewedy.com.eg/wp-content/uploads/2019/01/smart-residential.png"
+    }
+  ],
+  "manualScreens": [
+    {
+      "screenNo": "0",
+      "screenName": "اختبار الشاشة",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "1.0",
+      "screenName": "الرصيد المتبقي",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "1.1",
+      "screenName": "كيلووات ساعة المتبقية",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "28.7",
+      "screenName": "سعر التعريفة 8",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.0",
+      "screenName": "حدود تعريفة 1",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.1",
+      "screenName": "حدود تعريفة 2",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.2",
+      "screenName": "حدود تعريفة 3",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.3",
+      "screenName": "حدود تعريفة 4",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.4",
+      "screenName": "حدود تعريفة 5",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.5",
+      "screenName": "حدود تعريفة 6",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.6",
+      "screenName": "حدود تعريفة 7",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "29.7",
+      "screenName": "حدود تعريفة 8",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "30.0",
+      "screenName": "الضريبة اليومية",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "30.1",
+      "screenName": "الضريبة الشهرية",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "30.2",
+      "screenName": "ضريبة النسبة المئوية الشهرية",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.0",
+      "screenName": "الاستهلاك في التعريفة 1",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.1",
+      "screenName": "الاستهلاك في التعريفة 2",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.2",
+      "screenName": "الاستهلاك في التعريفة 3",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.3",
+      "screenName": "الاستهلاك في التعريفة 4",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.4",
+      "screenName": "الاستهلاك في التعريفة 5",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.5",
+      "screenName": "الاستهلاك في التعريفة 6",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.6",
+      "screenName": "الاستهلاك في التعريفة 7",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "34.7",
+      "screenName": "الاستهلاك في التعريفة 8",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "35",
+      "screenName": "عدد مرات قطع الجهد",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "40",
+      "screenName": "المتبقى من التعريفة الحالية",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.1",
+      "screenName": "إستهلاك يناير",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.2",
+      "screenName": "إستهلاك فبراير",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.3",
+      "screenName": "إستهلاك مارس",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.4",
+      "screenName": "إستهلاك أبريل",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.5",
+      "screenName": "إستهلاك مايو",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.6",
+      "screenName": "إستهلاك يونيو",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.7",
+      "screenName": "إستهلاك يوليو",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.8",
+      "screenName": "إستهلاك أغسطس",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.9",
+      "screenName": "إستهلاك سبتمبر",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.10",
+      "screenName": "إستهلاك أكتوبر",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.11",
+      "screenName": "إستهلاك نوفمبر",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "41.12",
+      "screenName": "إستهلاك ديسمبر",
+      "describtion": "Describtion"
+    },
+    {
+      "screenNo": "43",
+      "screenName": "-الإستهلاك المدين -ك.و.س",
+      "describtion": "Describtion"
+    }
+  ],
+  "automaticScreens": [
+    {
+      "screenNo": "0.0",
+      "screenName": "Name",
+      "describtion": "Describtion"
+    }
+  ],
+  "cardErrorCodes": [
+    {
+      "codeNo": "Bad 1",
+      "codeName": "انتهاء وقت التعامل مع الكارت",
+      "describtion": "وضع الكارت مره أخري علي العداد"
+    },
+    {
+      "codeNo": "Bad 32",
+      "codeName": "خطأ في توثيق البيانات بين الكارت والعداد",
+      "describtion": "وضع الكارت مره أخري علي العداد او تغيير الكارت"
+    },
+    {
+      "codeNo": "Bad 96",
+      "codeName": "انتهاء تاريخ صلاحيه الكارت",
+      "describtion": "تجديد اصدار الكارت"
+    },
+    {
+      "codeNo": "Bad 97",
+      "codeName": "وضع كارت عميل علي عداد اخر به عميل-   غير متصفر  -او اختلاف في رقم العداد بين الكارت والعداد",
+      "describtion": "التاكد من تصفير العداد التاكد من مطابقه رقم العداد الموجود بالكارت وكذلك العداد"
+    },
+    {
+      "codeNo": "Bad 98",
+      "codeName": "يعني أن هذا الكارت منتهي الصلاحيه او أن هذا الكارت لا يتبع هذا العداد.",
+      "describtion": "التاكد من صلاحية الكارت وأن هذا الكارت يتبع هذا العداد"
+    },
+    {
+      "codeNo": "Bad 99",
+      "codeName": "يختص بالكارت البديل ويعني ان هذا الكارت البديل غير مخصص لهذا العداد او أن الكارت انتهت صلاحيته",
+      "describtion": "التاكد من أن الكارت يختص بهذا العداد"
+    },
+    {
+      "codeNo": "Bad 101",
+      "codeName": "يختص بكارت المراجعه ويعني ان الكارت تعدي عدد العدادات المسموح بها.",
+      "describtion": "اكتفاء كارت المراجعه بعدد العدادت ويتم اصدار كارت اخر"
+    },
+    {
+      "codeNo": "Bad 102",
+      "codeName": "ويختص بكارت الاوامر ويعني ان الكارت تعدي عدد العدادت المسموح بها او خطأ في رقم قاعده البيانات",
+      "describtion": "ويختص بكارت الاوامر ويعني ان الكارت تعدي عدد العدادت المسموح بها او خطأ في رقم قاعده البيانات"
+    },
+    {
+      "codeNo": "Bad 104",
+      "codeName": " ويعني وضع كارت عداد احادي علي ثلاثي او العكس او وضع كارت ثلاثي علي ثلاثي غير مباشر",
+      "describtion": "التاكد من نوع الكارت والعداد"
+    },
+    {
+      "codeNo": "Bad 105",
+      "codeName": "ويختص بكارت البارامتر ويعني انه تم وضع الكارت علي عداد غير مضاف لمجموعه العدادات التي يجب المرور عليه. أو اختلاف في رقم قاعده البيانات",
+      "describtion": "التاكد من اضافه رقم العداد . والتاكد من رقم قاعده البيانات"
+    },
+    {
+      "codeNo": "Bad 106",
+      "codeName": "وجود خطا في اوامر الكارت اثناء تنفيذها",
+      "describtion": "فحص الاوامر"
+    },
+    {
+      "codeNo": "Bad 107",
+      "codeName": "وجود خطا في اوامر الكارت قبل تنفيذها",
+      "describtion": "فحص الاوامر"
+    }
+  ],
+  "meterErrorCodes": [
+    {
+      "codeNo": "14.8",
+      "codeName": "خطأ فى البرنامج",
+      "describtion": "Describtion"
+    },
+    {
+      "codeNo": "15.1",
+      "codeName": "خطأ فى الذاكرة",
+      "describtion": "Describtion"
+    },
+    {
+      "codeNo": "15.2",
+      "codeName": "خطأ فى الحساس",
+      "describtion": "Describtion"
+    },
+    {
+      "codeNo": "15.3",
+      "codeName": "خطأ فى الحساس",
+      "describtion": "Describtion"
+    },
+    {
+      "codeNo": "15.5",
+      "codeName": "خطأ فى قارئ الكروت",
+      "describtion": "Describtion"
+    },
+    {
+      "codeNo": "15.7",
+      "codeName": "خطأ فى الموصل",
+      "describtion": "Describtion"
+    }
+  ],
+  "screenLogos": [
+    {
+      "logo": "1.1",
+      "describtion": "describtion"
+    }
+  ],
+  "others": [
+    {
+      "codeNo": "Other Data Code Number",
+      "data": "Other Data Data"
+    }
+  ]
+}    
