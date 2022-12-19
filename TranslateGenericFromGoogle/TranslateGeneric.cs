@@ -8,12 +8,6 @@ namespace TranslateGenericFromGoogle
 {
     internal class TranslateGeneric
     {
-        public string SourceLanguage { get; set; }
-        public string DestinationLanguage { get; set; }
-        public HttpClient Client { get; set; }
-        public string Result { get; set; }
-        public int Counter { get; set; }
-        public JsonDataModelAngular DataObject { get; set; }
         public TranslateGeneric()
         {
             Result = string.Empty;
@@ -26,6 +20,12 @@ namespace TranslateGenericFromGoogle
             Client.DefaultRequestHeaders.Accept.Add(
                 new MediaTypeWithQualityHeaderValue("application/json"));
         }
+        public string SourceLanguage { get; set; }
+        public string DestinationLanguage { get; set; }
+        public HttpClient Client { get; set; }
+        public string Result { get; set; }
+        public int Counter { get; set; }
+        public JsonDataModelAngular DataObject { get; set; }
         public string? TranslateWord(string? word)
         {
             if (string.IsNullOrWhiteSpace(word))
