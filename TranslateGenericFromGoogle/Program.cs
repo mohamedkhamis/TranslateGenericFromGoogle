@@ -5,19 +5,19 @@
 
         private static async Task Main()
         {
-            var translateClass = new TranslateGeneric();
+            var translate = new TranslateGeneric();
 
             Console.WriteLine("start Translate From XML");
-            await translateClass.TranslateFromXml()!;
+            await translate.TranslateFromXml()!;
 
             Console.WriteLine("start Translate From Json Form Angular Json Key Value");
-            await translateClass.TranslateFromJson(true);
+            await translate.TranslateFromJson(true);
 
             Console.WriteLine("start Translate From Json Form Custom Json Key Value");
-            await translateClass.TranslateFromJson();
+            await translate.TranslateFromJson();
 
             Console.WriteLine("start Translate From Dictionary");
-            await translateClass.TranslateFromDictionary();
+            await translate.TranslateFromDictionary();
         }
     }
 }
