@@ -1,4 +1,4 @@
-﻿namespace testingAnyThing
+﻿namespace TranslateGenericFromGoogle.DataModel
 {
     internal class JsonDataModel
     {
@@ -6,11 +6,11 @@
         {
             Info = info;
             ManualScreens = manualScreens;
-            this.AutomaticScreens = automaticScreens;
-            this.CardErrorCodes = cardErrorCodes;
-            this.MeterErrorCodes = meterErrorCodes;
-            this.ScreenLogos = screenLogos;
-            this.Others = others;
+            AutomaticScreens = automaticScreens;
+            CardErrorCodes = cardErrorCodes;
+            MeterErrorCodes = meterErrorCodes;
+            ScreenLogos = screenLogos;
+            Others = others;
         }
 
         public List<Info> Info { get; set; }

@@ -1,7 +1,8 @@
 ﻿using System.Net.Http.Headers;
 using System.Xml;
 using Newtonsoft.Json;
-using testingAnyThing;
+using TranslateGenericFromGoogle.DataModel;
+using TranslateGenericFromGoogle.DataSample;
 
 namespace TranslateGenericFromGoogle
 {
@@ -10,11 +11,15 @@ namespace TranslateGenericFromGoogle
         public string SourceLanguage { get; set; }
         public string DestinationLanguage { get; set; }
         public HttpClient Client { get; set; }
-
+        public string Result { get; set; }
+        public int Counter { get; set; }
+        public JsonDataModelAngular DataObject { get; set; }
         public TranslateGeneric()
         {
+            Result = string.Empty;
+            DataObject = new JsonDataModelAngular();
             SourceLanguage = "ar";
-            DestinationLanguage = "fr";
+            DestinationLanguage = "es";
             Client = new HttpClient();
             const string url = "https://translate.googleapis.com/translate_a/single";
             Client.BaseAddress = new Uri(url);
@@ -23,6 +28,8 @@ namespace TranslateGenericFromGoogle
         }
         public string? TranslateWord(string? word)
         {
+            if (string.IsNullOrWhiteSpace(word))
+                return word;
             var valueTranslated = string.Empty;
             var urlParameters = $"?client=gtx&sl={SourceLanguage}&tl={DestinationLanguage}&dt=t&q={word}";
             try
@@ -35,10 +42,10 @@ namespace TranslateGenericFromGoogle
                     if (arrayList != null)
                     {
                         var firstElement = JsonConvert.DeserializeObject<List<object>>(arrayList);
-                        var frenchValue = firstElement?[0].ToString();
-                        if (frenchValue != null)
+                        var translatedValue = firstElement?[0].ToString();
+                        if (translatedValue != null)
                         {
-                            valueTranslated = JsonConvert.DeserializeObject<List<object>>(frenchValue)?[0].ToString();
+                            valueTranslated = JsonConvert.DeserializeObject<List<object>>(translatedValue)?[0].ToString();
                         }
                     }
                 }
@@ -52,10 +59,10 @@ namespace TranslateGenericFromGoogle
         public async Task TranslateFromDictionary()
         {
             DictionaryLanguage.FillArabicDictionary();
-            var french = DictionaryLanguage.Dict;
+            var spanishDict = DictionaryLanguage.dict;
             var text = string.Empty;
             var counter = 0;
-            foreach (var item in french)
+            foreach (var item in spanishDict)
             {
                 try
                 {
@@ -70,12 +77,13 @@ namespace TranslateGenericFromGoogle
                     Console.WriteLine(e);
                 }
             }
-            await File.WriteAllTextAsync("D:\\TranslateDictionary.txt", text);
+            await File.WriteAllTextAsync("D:\\TranslateDictionarySpanishDict.txt", text);
         }
         public async Task TranslateFromXml()
         {
             var result = string.Empty;
-            const string filename = "C:\\Users\\mkhhe\\source\\repos\\TranslateGenericFromGoogle\\TranslateGenericFromGoogle\\ResourceXMLWords.xml";
+            const string filename = "C:\\Users\\mohamed.khamis\\source\\repos\\mohamedkhamis\\TranslateGenericFromGoogle\\TranslateGenericFromGoogle\\DataSample\\ResourceXMLWords.xml";
+
             var xmlDoc = new XmlDocument();
             xmlDoc.Load(filename);
             var locationDetails = xmlDoc.SelectNodes("root");
@@ -89,7 +97,7 @@ namespace TranslateGenericFromGoogle
                     var value = TranslateWord(elementLoc.InnerText);
                     result += $"\t<data name=\"{key}\" xml:space=\"preserve\">\r\n    <value>{value}</value>\r\n  </data>";
                     counter++;
-                    Console.WriteLine("XML counter is : " + counter);
+                    Console.WriteLine("XML counter is : " + counter + "   Date Time Is  "+ DateTime.Now);
                 }
             }
 
@@ -101,14 +109,15 @@ namespace TranslateGenericFromGoogle
         public async Task TranslateFromJson()
         {
             var result = "{  \"manualScreens\": [";
-            const string jsonFilePath = @"C:\Users\mkhhe\source\repos\TranslateGenericFromGoogle\TranslateGenericFromGoogle\JsonKeyValue.json";
+
+            const string jsonFilePath = @"C:\Users\mohamed.khamis\Source\Repos\mohamedkhamis\TranslateGenericFromGoogle\TranslateGenericFromGoogle\DataSample\JsonKeyValue.json";
             var json = await File.ReadAllTextAsync(jsonFilePath, System.Text.Encoding.UTF8);
 
             var mainRoot = JsonConvert.DeserializeObject<JsonDataModel>(json);
             var counter = 0;
             foreach (var manualScreen in mainRoot!.ManualScreens)
             {
-                result += $"    {{\r\n      \"screenNo\": \"0\",\r\n      \"screenName\": \"{TranslateWord(manualScreen.ScreenName)}\",\r\n      \"description\": \"{manualScreen.Description}\"\r\n    }},";
+                result += $"    {{\r\n      \"screenNo\": \"{manualScreen.ScreenNo}\",\r\n      \"screenName\": \"{TranslateWord(manualScreen.ScreenName)}\",\r\n      \"description\": \"{TranslateWord(manualScreen.Description)}\"\r\n    }},";
                 counter++;
                 Console.WriteLine("json counter is : " + counter);
             }
@@ -135,7 +144,87 @@ namespace TranslateGenericFromGoogle
                 Console.WriteLine("json counter is : " + counter);
             }
             result += "  ]   \n }";
-            await File.WriteAllTextAsync("D:\\TranslateFromJson.txt", result);
+            await File.WriteAllTextAsync("D:\\TranslateFromJsonFR.txt", result);
+        }
+        public async Task TranslateFromJson(bool isAngularTranslate)
+        {
+            if (isAngularTranslate)
+            {
+                const string jsonFilePath = @"C:\Users\mohamed.khamis\Source\Repos\mohamedkhamis\TranslateGenericFromGoogle\TranslateGenericFromGoogle\DataSample\JsonKeyValueAngular.json";
+                var json = await File.ReadAllTextAsync(jsonFilePath, System.Text.Encoding.UTF8);
+                var dynamicObject = JsonConvert.DeserializeObject<dynamic>(json)!;
+                FillJsonModel(dynamicObject.login, DataObject.Login);
+                FillJsonModel(dynamicObject.customers, DataObject.Customers);
+                FillJsonModel(dynamicObject.newContract, DataObject.NewContract);
+                FillJsonModel(dynamicObject.receipt, DataObject.Receipt);
+                FillJsonModel(dynamicObject.menu, DataObject.Menu);
+                FillJsonModel(dynamicObject.report, DataObject.Report);
+                FillJsonModel(dynamicObject.basicDefinitions, DataObject.BasicDefinitions);
+                FillJsonModel(dynamicObject.settings, DataObject.Settings);
+                FillJsonModel(dynamicObject.configuration, DataObject.Configuration);
+                FillJsonModel(dynamicObject.operations, DataObject.Operations);
+                FillJsonModel(dynamicObject.userManagement, DataObject.UserManagement);
+                FillJsonModel(dynamicObject.readings, DataObject.Readings);
+                FillJsonModel(dynamicObject.share, DataObject.Share);
+                FillJsonModel(dynamicObject.firmwareUpgrade, DataObject.FirmwareUpgrade);
+                FillJsonModel(dynamicObject.dashbard, DataObject.Dashbard);
+                FillJsonModel(dynamicObject.task, DataObject.Task);
+                FillJsonModel(dynamicObject.schedule, DataObject.Schedule);
+                FillJsonModel(dynamicObject.applet, DataObject.Applet);
+                FillJsonModel(dynamicObject.cardServiceError, DataObject.CardServiceError);
+
+                Result = "{\r\n  \"login\": {";
+                AddData(DataObject.Login, "customers");
+                AddData(DataObject.Customers, "newContract");
+                AddData(DataObject.NewContract, "receipt");
+                AddData(DataObject.Receipt, "menu");
+                AddData(DataObject.Menu, "report");
+                AddData(DataObject.Report, "basicDefinitions");
+                AddData(DataObject.BasicDefinitions, "settings");
+                AddData(DataObject.Settings, "configuration");
+                AddData(DataObject.Configuration, "operations");
+                AddData(DataObject.Operations, "userManagement");
+                AddData(DataObject.UserManagement, "readings");
+                AddData(DataObject.Readings, "share");
+                AddData(DataObject.Share, "firmware-upgrade");
+                AddData(DataObject.FirmwareUpgrade, "dashbard");
+                AddData(DataObject.Dashbard, "task");
+                AddData(DataObject.Task, "schedule");
+                AddData(DataObject.Schedule, "applet");
+                AddData(DataObject.Applet, "cardServiceError");
+                AddData(DataObject.CardServiceError, "schedule");
+                AddData(DataObject.Task, "Final");
+                Result += "  }\r\n}";
+
+
+                await File.WriteAllTextAsync("D:\\TranslateFromJson-ES-Angular.txt", Result);
+
+
+
+            }
+
+        }
+        public void FillJsonModel(dynamic dynamicObject, List<KeyValueClass> dataEntity)
+        {
+            foreach (var item in dynamicObject)
+            {
+                dataEntity?.Add(new KeyValueClass() { Key = item.First.Parent.Name, Value = item.First.Value });
+            }
+        }
+        public void AddData(List<KeyValueClass>? dataList,string nextGroupName)
+        {
+            var itemIndex = 0;
+            if (dataList != null)
+                foreach (var item in dataList)
+                {
+                    itemIndex++;
+                    var lastComma = itemIndex == dataList.Count ?  string.Empty : ",";
+                    Result += $"  \"{item.Key}\": \"{TranslateWord(item.Value)}\"{lastComma}";
+                    Counter++;
+                    Console.WriteLine("json counter is : " + Counter + "   Date Time Is  " + DateTime.Now);
+
+                }
+            Result += "\r\n  },\r\n  \"" + $"{nextGroupName}" + "\": {";
         }
 
     }

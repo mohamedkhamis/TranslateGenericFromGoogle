@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ActivityType" xml:space="preserve">
+    <value>نوع النشاط</value>
+  </data>
+  <data name="Adjustment" xml:space="preserve">
+    <value>تسويات</value>
+  </data>
+  <data name="Adjustments" xml:space="preserve">
+    <value>قيمة التسويات</value>
+  </data>
+  <data name="AmountPaid" xml:space="preserve">
+    <value>المبلغ المدفوع</value>
+  </data>
+  <data name="ChargeAmount" xml:space="preserve">
+    <value>قيمة الشحن</value>
+  </data>
+  <data name="CRNnumber" xml:space="preserve">
+    <value>رقم الإشتراك CRN</value>
+  </data>
+  <data name="CustomerCode" xml:space="preserve">
+    <value>كود المشترك</value>
+  </data>
+  <data name="CustomerName" xml:space="preserve">
+    <value>اسم المشترك</value>
+    <comment>اسم المشترك</comment>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>التاريخ</value>
+  </data>
+  <data name="DistrictName" xml:space="preserve">
+    <value>المنطقة</value>
+  </data>
+  <data name="Fees" xml:space="preserve">
+    <value>الدمغات</value>
+  </data>
+  <data name="Installments" xml:space="preserve">
+    <value>دفعات</value>
+  </data>
+  <data name="InstallmentValue" xml:space="preserve">
+    <value>الأقساط</value>
+  </data>
+  <data name="MeterSerial" xml:space="preserve">
+    <value>رقم العداد</value>
+  </data>
+  <data name="MeterType" xml:space="preserve">
+    <value>نوع العداد</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>المستخدم</value>
+  </data>
+  <data name="OperatorSalesDetailsReport" xml:space="preserve">
+    <value>تقرير تفاصيل مبيعات مستحدم</value>
+  </data>
+  <data name="PaymentMethod" xml:space="preserve">
+    <value>طريقة الدفع</value>
+  </data>
+  <data name="PayType" xml:space="preserve">
+    <value>نوع الدفع</value>
+  </data>
+  <data name="Penalty" xml:space="preserve">
+    <value>غرامة تلاعب</value>
+  </data>
+  <data name="PowerSalesPound" xml:space="preserve">
+    <value>الطاقة المباعة بالجنيه</value>
+  </data>
+  <data name="ReceiptNo" xml:space="preserve">
+    <value>رقم الإيصال</value>
+  </data>
+  <data name="ReceiptNumber" xml:space="preserve">
+    <value>رقم إيصال السداد</value>
+  </data>
+  <data name="Region" xml:space="preserve">
+    <value>الإدارة الفرعية</value>
+  </data>
+  <data name="ReplaceCardPrice" xml:space="preserve">
+    <value>سعر كارت البديل</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>المجموع</value>
+  </data>
+  <data name="TransactionDate" xml:space="preserve">
+    <value>تاريخ العمليه</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>إسم المستخدم</value>
+  </data>
+  <data name="ReceiptsReport" xml:space="preserve">
+    <value>تقرير إيصالات الشحن</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>من</value>
+  </data>
+  <data name="PrintDate" xml:space="preserve">
+    <value>تاريخ الطباعة</value>
+  </data>
+  <data name="PrintTime" xml:space="preserve">
+    <value>وقت الطباعة</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>إلى</value>
+  </data>
+  <data name="ChargeTransactionCount" xml:space="preserve">
+    <value>عدد حركات الشحن</value>
+  </data>
+  <data name="GeneralRegion" xml:space="preserve">
+    <value>الإدارة العامه</value>
+  </data>
+  <data name="Sector" xml:space="preserve">
+    <value>القطاع</value>
+  </data>
+  <data name="TotalAdjustments" xml:space="preserve">
+    <value>إجمالى التسويات</value>
+  </data>
+  <data name="TotalFees" xml:space="preserve">
+    <value>إجمالي الدمغات</value>
+  </data>
+  <data name="TotalNetChargeValue" xml:space="preserve">
+    <value>إجمالي قيمة الشحن</value>
+  </data>
+  <data name="TotalPaidValue" xml:space="preserve">
+    <value>إجمالي المبلغ المدفوع</value>
+  </data>
+  <data name="TotalPowerSales" xml:space="preserve">
+    <value>إجمالى الكميه</value>
+  </data>
+  <data name="FinancialAccount" xml:space="preserve">
+    <value>المرجع الحسابى</value>
+  </data>
+  <data name="TransactionType" xml:space="preserve">
+    <value>نوع الحركه</value>
+  </data>
+  <data name="AccountCode" xml:space="preserve">
+    <value>كود الحساب الرئيسي</value>
+  </data>
+  <data name="AccountTypeCode" xml:space="preserve">
+    <value>كود نوع الحساب</value>
+  </data>
+  <data name="ActivityCode" xml:space="preserve">
+    <value>كود وصف المشترك</value>
+  </data>
+  <data name="BranchCode" xml:space="preserve">
+    <value>كود الحساب الفرعى</value>
+  </data>
+  <data name="CompanyCode" xml:space="preserve">
+    <value>كود الشركة</value>
+  </data>
+  <data name="CorporateCustomer" xml:space="preserve">
+    <value>مؤشر كبار المشتركين</value>
+  </data>
+  <data name="CustomerAddress" xml:space="preserve">
+    <value>العنوان</value>
+  </data>
+  <data name="CustomerRelationCode" xml:space="preserve">
+    <value>كود علاقة المشترك بالوحده</value>
+  </data>
+  <data name="CustomerTypeCode" xml:space="preserve">
+    <value>كود نوع المشترك</value>
+  </data>
+  <data name="DayCode" xml:space="preserve">
+    <value>كود اليومية</value>
+  </data>
+  <data name="DistrictCode" xml:space="preserve">
+    <value>كود المنطقة</value>
+  </data>
+  <data name="GovernmentCode" xml:space="preserve">
+    <value>كود المحافظه</value>
+  </data>
+  <data name="ManagementMonitorReport" xml:space="preserve">
+    <value>تقرير الرقابة الإدارية</value>
+  </data>
+  <data name="MeterCode" xml:space="preserve">
+    <value>كود العداد</value>
+  </data>
+  <data name="MeterTypeCode" xml:space="preserve">
+    <value>كود نوع العداد</value>
+  </data>
+  <data name="NationalID" xml:space="preserve">
+    <value>الرقم القومى للمشترك</value>
+  </data>
+  <data name="OrganizationCode" xml:space="preserve">
+    <value>كود نوع الجهه</value>
+  </data>
+  <data name="OrganizationCRA" xml:space="preserve">
+    <value>كود السجل التجاري</value>
+  </data>
+  <data name="PlaceDescriptionCode" xml:space="preserve">
+    <value>كود وصف المكان</value>
+  </data>
+  <data name="PlateNo" xml:space="preserve">
+    <value>رقم اللوحه</value>
+  </data>
+  <data name="PoliceCode" xml:space="preserve">
+    <value>كود القسم الموحد</value>
+  </data>
+  <data name="RegionCode" xml:space="preserve">
+    <value>كود الإدارة الفرعية</value>
+  </data>
+  <data name="SectorCode" xml:space="preserve">
+    <value>كود القطاع</value>
+  </data>
+  <data name="UnitCode" xml:space="preserve">
+    <value>كود الوحده</value>
+  </data>
+  <data name="VoltageCode" xml:space="preserve">
+    <value>كود الجهد الكهربائى</value>
+  </data>
+  <data name="AverageConsumption" xml:space="preserve">
+    <value>متوسط الاستهلاك الفعلي</value>
+  </data>
+  <data name="DeleteReasonCode" xml:space="preserve">
+    <value>كود سبب رفع البيان من بيانات المشتركين</value>
+  </data>
+  <data name="MonthsCount" xml:space="preserve">
+    <value>عدد أشهر حساب المتوسط</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>تاريخ بدأ حساب المتوسط</value>
+  </data>
+  <data name="TransferAverageConsumption" xml:space="preserve">
+    <value>حركة نقل متوسط الإستهلاك</value>
+  </data>
+  <data name="TransferDeletedCustomers" xml:space="preserve">
+    <value>حركة نقل إنهاء بيانات مشترك</value>
+  </data>
+  <data name="DebitValue" xml:space="preserve">
+    <value>ديون</value>
+  </data>
+  <data name="PenalityValue" xml:space="preserve">
+    <value>غرامات</value>
+  </data>
+  <data name="AdjustmentPaymentValue" xml:space="preserve">
+    <value>تسويات بدون شحن</value>
+  </data>
+  <data name="ActivityCodeColumn" xml:space="preserve">
+    <value>كود وصف النشاط</value>
+  </data>
+  <data name="CustomerCodeColumn" xml:space="preserve">
+    <value>كود السداد الالكتروني</value>
+  </data>
+  <data name="GovernmentCodeColumn" xml:space="preserve">
+    <value>كود المحافظة الموحد</value>
+  </data>
+  <data name="MeterCodeColumn" xml:space="preserve">
+    <value>عداد كودي</value>
+  </data>
+  <data name="TransactionDateColumn" xml:space="preserve">
+    <value>تاريخ التحديث</value>
+  </data>
+  <data name="UnitCodeColumn" xml:space="preserve">
+    <value>رقم الوحده الموحد</value>
+  </data>
+  <data name="CreditAdjustments" xml:space="preserve">
+    <value>التسويات الدائنة</value>
+  </data>
+  <data name="AllActivityTypes" xml:space="preserve">
+    <value>جميع الانشطة</value>
+  </data>
+  <data name="AllDistricts" xml:space="preserve">
+    <value>جميع المناطق</value>
+  </data>
+  <data name="AllGeneralRegions" xml:space="preserve">
+    <value>جميع الإدارات العامة</value>
+  </data>
+  <data name="AllRegions" xml:space="preserve">
+    <value>جميع الإدارات الفرعية</value>
+  </data>
+  <data name="AllSectors" xml:space="preserve">
+    <value>جميع القطاعات</value>
+  </data>
+  <data name="AllTypes" xml:space="preserve">
+    <value>كل الأنواع</value>
+  </data>
+  <data name="AllUsers" xml:space="preserve">
+    <value>كل المستخدمين</value>
+  </data>
+  <data name="CorporateClient" xml:space="preserve">
+    <value>كبار المشتركين</value>
+  </data>
+  <data name="CorporateDistrict" xml:space="preserve">
+    <value>منطقة كبار المشتركين</value>
+  </data>
+  <data name="CorporateRegion" xml:space="preserve">
+    <value>منطقة كبار المشتركين</value>
+  </data>
+  <data name="CorporateSector" xml:space="preserve">
+    <value>ادارات كبار مشتركين</value>
+  </data>
+  <data name="CustomerType" xml:space="preserve">
+    <value>نوع المشترك</value>
+  </data>
+  <data name="UserType" xml:space="preserve">
+    <value>نوع المستخدم</value>
+  </data>
+  <data name="TotalCustomersNumber" xml:space="preserve">
+    <value>عدد المشتركين</value>
+  </data>
+  <data name="TotalPenalities" xml:space="preserve">
+    <value>اجمالى غرامة التلاعب</value>
+  </data>
+  <data name="CustomerRegionName" xml:space="preserve">
+    <value>إدارة المشترك</value>
+  </data>
+  <data name="UserRegionName" xml:space="preserve">
+    <value>إدارة المستخدم</value>
+  </data>
+  <data name="RegionTypeFilter" xml:space="preserve">
+    <value>نوع الإدارة</value>
+  </data>
+  <data name="FawryCommission" xml:space="preserve">
+    <value>عمولة الدفع الالكتروني</value>
+  </data>
+  <data name="UserCode" xml:space="preserve">
+    <value>كود المستخدم</value>
+  </data>
+  <data name="HandHeldSerial" xml:space="preserve">
+    <value>الرقم المسلسل للجهاز</value>
+  </data>
+</root>
